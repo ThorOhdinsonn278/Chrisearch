@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            font-size: 2em;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1.2em;
+            width: 300px;
+            margin-right: 10px;
+            border: 2px solid #4CAF50;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Simple Search</h1>
+        <p>Search the web with DuckDuckGo</p>
+    </header>
+
+    <div class="search-container">
+        <form action="https://duckduckgo.com/" method="get" target="_blank">
+            <input type="text" name="q" placeholder="Enter your search term" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Simple Search</p>
+    </footer>
+
+</body>
+</html>
